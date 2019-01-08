@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:~/.npm-global/bin:/usr/local/bin:$PATH
 export ZSH="/home/Treborium/.oh-my-zsh"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
