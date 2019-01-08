@@ -18,6 +18,7 @@
 trans = #00000000
 white = #FFFFFF
 black = #000000
+red   = #212121
 
 bg = #1F1F1F
 fg = #FFFFFF
