@@ -33,8 +33,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias install="sudo dnf install -y"
 alias update"sudo dnf update"
-alias zshrc="gedit ~/.zshrc && source ~/.zshrc"
-alias i3-config="gedit ~/.config/i3/config"
+alias zshrc="$EDITOR ~/.zshrc && source ~/.zshrc"
+alias i3-config="$EDITOR ~/.config/i3/config"
 alias todo="todolist"
 alias exe="chmod +x"
 
