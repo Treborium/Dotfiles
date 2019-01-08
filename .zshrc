@@ -32,10 +32,11 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 alias install="sudo dnf install -y"
-alias update0"sudo dnf update"
+alias update"sudo dnf update"
 alias zshrc="gedit ~/.zshrc && source ~/.zshrc"
 alias i3-config="gedit ~/.config/i3/config"
 alias todo="todolist"
+alias exe="chmod +x"
 
 
 n()
