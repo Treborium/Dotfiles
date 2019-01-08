@@ -37,6 +37,7 @@ alias zshrc="$EDITOR ~/.zshrc && source ~/.zshrc"
 alias i3-config="$EDITOR ~/.config/i3/config"
 alias todo="todolist"
 alias exe="chmod +x"
+alias sudo="sudo "  # allow aliases to be sudoed
 
 
 n()
