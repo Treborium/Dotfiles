@@ -153,13 +153,12 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Custom Keybindings
-#bindsym $mod+F3 exec amixer -q sset Master 5%+
-#bindsym $mod+F2 exec amixer -q sset Master 5%-
-#bindsym $mod+F5 exec br -d 100
-#bindsym $mod+F6 exec br -i 100
+bindsym $mod+F3 exec amixer -q sset Master 5%+
+bindsym $mod+F2 exec amixer -q sset Master 5%-
+bindsym $mod+F5 exec br -d 100
+bindsym $mod+F6 exec br -i 100
+bindsym $mod+l exec i3lock -c 111111 -t -e
 
-
-#bindsym $mod+l exec i3lock -c 263238 -t -e
 bindsym $mod+n exec $term -- nnn
 
 
