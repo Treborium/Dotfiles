@@ -63,7 +63,14 @@ fd() {
 
 fdh() {
   cd /home/Treborium
-  fd
+  # fd
+
+  if [ $# -eq 0 ]
+    then
+      fd
+    else
+      fd_with_arguments "$@"
+  fi
 }
 
 mfdir() {
@@ -79,6 +86,22 @@ mf() {
 cf() {
   cp "$1" "$2"
   cd "$2"
+}
+
+fd_with_arguments() {
+  local file
+
+  file="$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1)"
+
+  if [[ -n $file ]]
+  then
+     if [[ -d $file ]]
+     then
+        cd -- $file
+     else
+        cd -- ${file:h}
+     fi
+  fi
 }
 
 # These lines have to be at the end of the file!
