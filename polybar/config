@@ -44,10 +44,10 @@ ashade8 = #2C2C2C
 [bar/main]
 width = 100%
 height = 32
-offset-x = 2%
-offset-y = 2%
+offset-x = 1%
+offset-y = 1%
 bottom = false
-fixed-center = false
+fixed-center = true
 line-size = 2
 
 background = ${color.bg}
@@ -76,7 +76,7 @@ modules-right = pkg volume battery bluetooth network date powermenu
 
 [module/arch]
 type = custom/text
-content = 
+content = 
 ;alt icons = 
 content-padding = 2
 content-background = ${color.bg}
