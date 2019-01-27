@@ -1,9 +1,11 @@
-export PATH=$HOME/bin:~/.npm-global/bin:/usr/local/bin:$PATH
-export ZSH="/home/Treborium/.oh-my-zsh"
+NPM_PACKAGES=$HOME/.npm-packages
+
+export PATH=$HOME/bin:$NPM_PACKAGES/bin:/usr/local/bin:$PATH
+export ZSH="/home/treborium/.oh-my-zsh"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # NNN related stuff
-export EDITOR="gedit"
+export EDITOR="ne"
 export NNN_FALLBACK_OPENER="xdg-open"
 export NNN_COPIER="$HOME/.config/nnn/copier.sh"
 export NNN_USE_EDITOR=1
@@ -22,17 +24,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-alias install="sudo dnf install -y"
-alias update"sudo dnf update"
+alias install="sudo pacman -S "
+alias update"sudo pacman -Syu"
 alias zshrc="$EDITOR ~/.zshrc && source ~/.zshrc"
 alias i3-config="$EDITOR ~/.config/i3/config"
 alias todo="todolist"
@@ -51,7 +44,7 @@ n()
 }
 
 open() {
-  xdg-open "$1" &
+  nohup xdg-open "$1" </dev/null &>/dev/null &
 }
 
 fd() {
@@ -62,7 +55,7 @@ fd() {
 }
 
 fdh() {
-  cd /home/Treborium
+  cd /home/treborium
   # fd
 
   if [ $# -eq 0 ]
