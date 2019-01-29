@@ -1,6 +1,7 @@
 NPM_PACKAGES=$HOME/.npm-packages
+POLYBAR_SCRIPTS=$HOME/.config/polybar/scripts
 
-export PATH=$HOME/bin:$NPM_PACKAGES/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$NPM_PACKAGES/bin:/usr/local/bin:$POLYBAR_SCRIPTS:$PATH
 export ZSH="/home/treborium/.oh-my-zsh"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
