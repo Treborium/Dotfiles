@@ -5,7 +5,7 @@ export ZSH="/home/treborium/.oh-my-zsh"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # NNN related stuff
-export EDITOR="ne"
+export EDITOR=ne
 export NNN_FALLBACK_OPENER="xdg-open"
 export NNN_COPIER="$HOME/.config/nnn/copier.sh"
 export NNN_USE_EDITOR=1
@@ -99,4 +99,5 @@ fd_with_arguments() {
 
 # These lines have to be at the end of the file!
 # Don't write anyhting below them
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
