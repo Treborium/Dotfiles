@@ -42,6 +42,7 @@ ashade8 = #2C2C2C
 ;==========================================================
 
 [bar/main]
+monitor = ${env:MONITOR:DP1-2}
 width = 100%
 height = 32
 offset-x = 1%
@@ -70,7 +71,7 @@ scroll-down = i3wm-wsprev
 ;== Module Location ========================================================
 
 modules-left = arch workspaces padding firefox duckduckgo github reddit youtube
-modules-right = pkg volume battery bluetooth network date powermenu
+modules-right = pkg volume battery network date powermenu
  
 ;== Modules ========================================================
 
@@ -248,8 +249,8 @@ type = custom/script
 exec = check-network
 format-background = ${color.bg}
 format-padding = 2
-click-left = wicd-client &
-click-right = wicd-client &
+click-left = networkmanager_dmenu &
+click-right = networkmanager_dmenu &
 tail = true
 
 [module/bluetooth]
