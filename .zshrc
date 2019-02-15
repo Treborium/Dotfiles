@@ -1,9 +1,11 @@
 NPM_PACKAGES=$HOME/.npm-packages
-POLYBAR_SCRIPTS=$HOME/.config/polybar/scripts
+PIP_PACKAGES=$HOME/.local/bin
 
-export PATH=$HOME/bin:$NPM_PACKAGES/bin:/usr/local/bin:$POLYBAR_SCRIPTS:$PATH
+export PATH=$HOME/bin:$NPM_PACKAGES/bin:$PIP_PACKAGES:/usr/local/bin:$PATH
 export ZSH="/home/treborium/.oh-my-zsh"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+export MDV_THEME=814.7803
 
 # NNN related stuff
 export EDITOR=ne
@@ -34,8 +36,11 @@ alias exe="chmod +x"
 alias sudo="sudo "  # allow aliases to be sudoed
 
 
-n()
-{
+#md() {
+#  mdv "$1" | less
+#}
+
+n() {
   nnn "$@"
 
   if [ -f $NNN_TMPFILE ]; then
@@ -100,5 +105,6 @@ fd_with_arguments() {
 
 # These lines have to be at the end of the file!
 # Don't write anyhting below them
+eval "$(lua $HOME/Open_Source/z.lua/z.lua --init zsh)"
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
