@@ -1,0 +1,39 @@
+# Main Colors
+unrecognized_file: royalblue
+recognized_file:   cornflower
+dir:               deepskyblue
+
+# Link
+dead_link: red
+link:      cyan
+
+# Access Modes
+write:     mediumblue
+read:      limegreen
+exec:      red
+no_access: indianred
+
+# Age
+hour_old:    whitesmoke
+day_old:     lightgray
+no_modifier: darkgray
+
+# File Size
+file_large:  orange
+file_medium: gold
+file_small:  peachpuff
+
+# Random
+report: webgray
+user:   moccasin
+tree:   cyan
+empty:  yellow
+error:  red
+normal: darkkhaki
+
+# Git
+addition:     chartreuse
+modification: darkkhaki
+deletion:     darkred
+untracked:    darkorange
+unchanged:    forestgreen
