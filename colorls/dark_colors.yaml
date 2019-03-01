@@ -8,9 +8,9 @@ dead_link: red
 link:      cyan
 
 # Access Modes
-write:     mediumblue
-read:      limegreen
-exec:      red
+read:      darkorange
+write:     lightsalmon
+exec:      tomato
 no_access: indianred
 
 # Age
