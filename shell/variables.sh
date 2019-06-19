@@ -1,9 +1,10 @@
-NPM_PACKAGES="${HOME}/npm"
+NPM_PACKAGES=$HOME/npm/bin
 PIP_PACKAGES=$HOME/.local/bin
 RUBY_GEMS=$HOME/.gem/ruby/2.6.0/bin
 SASS_BIN=$HOME/bin/dart-sass
+GO_PACKAGES=$HOME/go/bin
 
-export PATH=$HOME/bin:$NPM_PACKAGES/bin:$PIP_PACKAGES:$RUBY_GEMS:$SASS_BIN:/usr/local/bin::/usr/local/go/bin:$PATH
+export PATH=$HOME/bin:$NPM_PACKAGES:$PIP_PACKAGES:$RUBY_GEMS:$SASS_BIN:/usr/local/bin::/usr/local/go/bin:$GO_PACKAGES:$PATH
 export ZSH="/home/treborium/.oh-my-zsh"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
