@@ -31,3 +31,4 @@ fpath=($fpath "/home/treborium/.zfunctions")
 
 export NVM_DIR="/home/treborium/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source /home/treborium/Open_Source/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
