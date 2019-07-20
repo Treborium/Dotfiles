@@ -22,3 +22,4 @@ export NNN_USE_EDITOR=1
 export NNN_TMPFILE="/tmp/nnn"
 export NNN_CONTEXT_COLOR='1234'
 export DISABLE_FILE_OPEN_ON_NAV=1
+export NNN_BMS="p:~/Projects;s:~/Studium/Semester_5;d:~/Downloads"
