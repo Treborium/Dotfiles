@@ -24,3 +24,7 @@ function mfdir() {
   mkdir "$1"
   cd "$1"
 }
+
+function start() {
+  nohup "$1" &
+}
