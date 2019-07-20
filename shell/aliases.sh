@@ -1,6 +1,7 @@
 alias zshrc="$EDITOR ~/.zshrc && source ~/.zshrc"
 alias exe="chmod +x"
 alias sudo="sudo "  # allow aliases to be sudoed
+alias bin='eval "$(ls ~/bin | fzf)"' # list usr scripts and execute selected
 
 
 # override ls with colorls
