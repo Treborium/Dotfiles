@@ -13,6 +13,10 @@ function open() {
   nohup xdg-open "$1" </dev/null &>/dev/null &
 }
 
+function cd() {
+  builtin cd "$@" && ls
+}
+
 function fzf_search_for_directory() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
@@ -27,4 +31,8 @@ function mfdir() {
 
 function start() {
   nohup "$1" &
+}
+
+function gi() {
+   curl -sLw n https://www.gitignore.io/api/$@ ;
 }

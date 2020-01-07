@@ -1,4 +1,4 @@
-NPM_PACKAGES=$HOME/npm/bin
+NPM_PACKAGES=$HOME/.npm/bin
 PIP_PACKAGES=$HOME/.local/bin
 RUBY_GEMS=$HOME/.gem/ruby/2.6.0/bin
 SASS_BIN=$HOME/bin/dart-sass
@@ -14,12 +14,14 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 export MDV_THEME=814.7803
 
 # NNN related stuff
-export EDITOR="/usr/local/bin/ne"
-export VISUAL=$EDITOR
-export NNN_FALLBACK_OPENER="xdg-open"
-export NNN_COPIER="$HOME/.config/nnn/copier.sh"
-export NNN_USE_EDITOR=1
-export NNN_TMPFILE="/tmp/nnn"
-export NNN_CONTEXT_COLOR='1234'
-export DISABLE_FILE_OPEN_ON_NAV=1
-export NNN_BMS="p:~/Projects;s:~/Studium/Semester_5;d:~/Downloads"
+# export EDITOR="/usr/sbin/nano"
+# export VISUAL=$EDITOR
+# export NNN_FALLBACK_OPENER="xdg-open"
+# export NNN_COPIER="$HOME/.config/nnn/copier.sh"
+# export NNN_USE_EDITOR=1
+# export NNN_TMPFILE="/tmp/nnn"
+# export NNN_CONTEXT_COLOR='1234'
+# export DISABLE_FILE_OPEN_ON_NAV=1
+# export NNN_BMS="p:~/Projects;s:~/Studium/Semester_5;d:~/Downloads"
+
+export DISABLE_LS_COLORS="true"

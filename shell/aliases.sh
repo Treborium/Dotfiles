@@ -1,18 +1,23 @@
+# Quickly edit config files
 alias zshrc="$EDITOR ~/.zshrc && source ~/.zshrc"
-alias exe="chmod +x"
+alias ea="$EDITOR ~/.aliases.sh && source ~/.zshrc" # edit aliases
+alias ba='bat ~/.aliases.sh'	# list user defined aliases
+
+alias exe="chmod +x"	# make a file executable
 alias sudo="sudo "  # allow aliases to be sudoed
-alias bin='eval "$(ls ~/bin | fzf)"' # list usr scripts and execute selected
+alias bin='eval "$(ls ~/bin | fzf)"' # list user scripts and execute selected
 
 
 # override ls with colorls
 alias ls='lsd'
-alias l='ls -l'
-alias ll='ls -la'
-alias lt='ls --tree'
+alias l='lsd -l'
+alias ll='lsd -la'
+alias lt='lsd --tree'
+
 
 # override cp and mv for alternatives with progress bar
-alias cp='cpg -gR'
-alias mv='mvg -g'
+# alias cp='cpg -gR'
+# alias mv='mvg -g'
 alias xclip='xclip -sel clip'
 
 
@@ -21,14 +26,10 @@ alias running-services='systemctl | grep running'
 alias enabled-services='systemctl list-unit-files | grep enabled'
 alias logs='sudo journalctl -f -b'
 
-# git related aliases
-alias ga='git add'
-alias gc='git commit -m'
-alias gs='git status'
-alias gl='git log'
-alias gp='git pull'
-alias gf='git fetch'
-alias gg='git push'
-alias pf='push --force-with-lease'
 
 alias diff='colordiff'
+
+
+# network related aliases
+alias ltc='netstat -nt'		# list current tcp connections
+alias ltcl='netstat -ntl'	# list all tcp ports that the machine is listening on

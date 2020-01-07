@@ -1,7 +1,4 @@
-INCLUDE_FILES_DIR=$HOME/Projects/Dotfiles/shell
-
-# ZSH related stuff
-ZSH_THEME="spaceship"
+INCLUDE_FILES_DIR=$HOME/Repositories/dotfiles/shell
 
 plugins=(
   git
@@ -19,16 +16,15 @@ source $ZSH/oh-my-zsh.sh
 # These lines have to be at the end of the file!
 # Don't write anyhting below them
 
-eval "$(lua $HOME/Open_Source/z.lua/z.lua --init zsh)"
+eval "$(lua $HOME/Repositories/z.lua/z.lua --init zsh)"
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fpath=($fpath "/home/treborium/.zfunctions")
 
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
+eval "$(starship init zsh)"
 
 export NVM_DIR="/home/treborium/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-source /home/treborium/Open_Source/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source /home/treborium/Repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
