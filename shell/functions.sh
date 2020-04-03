@@ -34,5 +34,9 @@ function start() {
 }
 
 function gi() {
-   curl -sLw n https://www.gitignore.io/api/$@ ;
+  curl -sLw n https://www.gitignore.io/api/$@ ;
+}
+
+function vmd() {
+  nohup vmd "$@" </dev/null &>/dev/null &
 }

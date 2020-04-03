@@ -3,15 +3,14 @@ PIP_PACKAGES=$HOME/.local/bin
 RUBY_GEMS=$HOME/.gem/ruby/2.6.0/bin
 SASS_BIN=$HOME/bin/dart-sass
 GO_PACKAGES=$HOME/go/bin
+RUSTUP=$HOME/.cargo/bin/rustup
 
-export PATH=$HOME/bin:$NPM_PACKAGES:$PIP_PACKAGES:$RUBY_GEMS:$SASS_BIN:/usr/local/bin::/usr/local/go/bin:$GO_PACKAGES:$PATH
+export PATH=$HOME/bin:$NPM_PACKAGES:$PIP_PACKAGES:$RUBY_GEMS:$SASS_BIN:/usr/local/bin:/usr/local/go/bin:$GO_PACKAGES:$RUSTUP:$PATH
 export ZSH="/home/treborium/.oh-my-zsh"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 unset MANPATH
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-
-export MDV_THEME=814.7803
 
 # NNN related stuff
 # export EDITOR="/usr/sbin/nano"
