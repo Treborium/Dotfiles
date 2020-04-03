@@ -1,0 +1,15 @@
+include "/usr/share/nano/*"
+
+set tabsize 4
+set tabstospaces
+set constantshow
+set autoindent
+set guidestripe 80
+
+bind ^Q exit all
+bind ^X cut main
+bind ^V paste main
+bind ^Y zap main
+bind ^Z undo main
+bind ^C copy main
+bind ^H chopwordleft main
