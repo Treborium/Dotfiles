@@ -1,4 +1,4 @@
-source $HOME/Repositories/dotfiles/shell/functions.sh
+source $HOME/Repositories/Dotfiles/shell/functions.sh
 
 zle -N fzf_search_for_directory
 

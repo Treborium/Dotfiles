@@ -29,7 +29,6 @@ alias logs='sudo journalctl -f -b'
 
 alias diff='colordiff'
 
-
 # network related aliases
 alias ltc='netstat -nt'		# list current tcp connections
 alias ltcl='netstat -ntl'	# list all tcp ports that the machine is listening on
